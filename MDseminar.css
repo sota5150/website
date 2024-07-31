@@ -1,0 +1,56 @@
+body {
+    font-size: 120%;
+    color: black;
+    background-color: #FFCC99;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: white;
+}
+
+#resultOutput {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#stopButton {
+    background-color: #f44336;
+}
+
+#resultOutput span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#resultOutput span:nth-child(odd) {
+    color: green;
+    text-align: left;
+}
+
+#resultOutput span:nth-child(even) {
+    color: red;
+    text-align: right;
+}
