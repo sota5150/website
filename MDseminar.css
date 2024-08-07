@@ -1,7 +1,7 @@
 body {
     font-size: 120%;
-    color: black;
-    background-color: #FFCC99;
+    color: rgb(87, 87, 87);
+    background-color: #c7f6fc;
     font-family: Arial, sans-serif;
 }
 
@@ -12,12 +12,24 @@ body {
     text-align: center;
 }
 
+/*ボタンの位置を決める*/
+.button-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    display: inline-block;
+    margin: 0 10px; /* ボタン間の間隔を調整 */
+}
+
 .container {
     margin: 0 auto;
     width: 60%;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #000;
+    border: 2px solid #d9d9d9;
     background-color: white;
 }
 
@@ -29,15 +41,17 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-right: 10px;
+}
+
+#startButton {
+    background-color: green;
 }
 
 #stopButton {
-    background-color: #f44336;
+    background-color: blue;
 }
 
 #resultOutput span {
@@ -51,6 +65,16 @@ button {
 }
 
 #resultOutput span:nth-child(even) {
-    color: red;
+    color: blue;
     text-align: right;
+}
+
+#credits {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+    margin-top: 20px; /* 上部の余白を追加 */
+    padding-right: 20px; /* 右側に余白を追加 */
+    display: block; /* ブロック要素として表示 */
+    width: 100%; /* 幅を100%に設定 */
 }
